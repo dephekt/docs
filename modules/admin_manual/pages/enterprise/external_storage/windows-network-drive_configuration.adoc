@@ -40,7 +40,7 @@ Compared to standard SMB access, WND has advanced features like:
 .Brief Description of Advanced Features:
 
 User lockout prevention and password reset::
-Depending on the Windows or Samba policy, users could get locked out of their account if they enter a wrong password a number of times. The lockout prevention tries to avoid this from happening by resetting the password if it is wrong. In the case of ownCloud's standard SMB connector the password won't be reset. It could happen that users get locked out of the file server.
+Depending on the Windows or Samba policy, users could get locked out of their account if they enter a wrong password a number of times. The lockout prevention tries to avoid this from happening by resetting the password if it is wrong. This is also true for Collaborative WND when using `login credentials saved in database` and a repeatedly running files-scan job which may use outdated credentials. In the case of ownCloud's standard SMB connector, the password won't be reset. It could happen that users get locked out of the file server.
 
 More authentication mechanisms against the backend::
 Please see the details about the xref:enterprise/external_storage/enterprise_only_auth.adoc[Enterprise-Only Authentication Options]
